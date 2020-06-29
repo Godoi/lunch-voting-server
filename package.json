@@ -1,0 +1,27 @@
+{
+	"name": "lunch-voting",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "npm run lint && npm run start",
+		"dev-watch": "nodemon -w index.js -w app --exec npm run dev",
+		"lint": "eslint index.js app/**",
+		"lint-fix": "eslint index.js app/** --fix",
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"moment": "^2.27.0"
+	},
+	"devDependencies": {
+		"eslint": "^7.3.1",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"nodemon": "^2.0.4",
+		"prettier": "2.0.5"
+	}
+}
